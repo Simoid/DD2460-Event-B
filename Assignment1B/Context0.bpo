@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="4">
+<org.eventb.core.poIdentifier name="HeaterSet" org.eventb.core.type="ℙ(HeaterSet)"/>
+<org.eventb.core.poIdentifier name="High" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Low" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Off" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Assignment1B/Context0.bpo|org.eventb.core.poFile#Context0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(HeaterSet,{High},{Low},{Off})" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

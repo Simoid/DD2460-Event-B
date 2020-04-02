@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="INITIALISATION/inv1_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="IncreasePressure/inv1_2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="27" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="IncreasePressure/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="27" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="IncreasePressure/Pressure/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="27" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="LowerPressure/inv1_2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="29" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="LowerPressure/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="29" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="LowerPressure/Pressure/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="29" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="OffPressure/inv1_2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="OffPressure/act1/FIS" org.eventb.core.confidence="1000" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="OffPressure/Pressure/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

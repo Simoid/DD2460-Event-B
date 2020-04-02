@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(HeaterSet,{High},{Low},{Off})" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="HeaterSet" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.carrierSet#+" org.eventb.core.type="ℙ(HeaterSet)"/>
+<org.eventb.core.scConstant name="High" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#," org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.scConstant name="Low" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#-" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.scConstant name="Off" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#." org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.scContextFile>
