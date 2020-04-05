@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="23">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="14">
+<org.eventb.core.poIdentifier name="HeaterSet" org.eventb.core.type="ℙ(HeaterSet)"/>
+<org.eventb.core.poIdentifier name="High" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Low" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Off" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poPredicate name="HeaterSeu" org.eventb.core.predicate="partition(HeaterSet,{High},{Low},{Off})" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poIdentifier name="Heater" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="TimeStamp" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv0_3/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="23">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#EVTALLHYPTimeStamq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poSequent#INITIALISATION\/inv0_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTTimeStamq" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poIdentifier name="TimeStamp'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Heater'" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPTimeStamq" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#EVTIDENTTimeStamq" org.eventb.core.poStamp="23"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTTimeStamr" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poIdentifier name="Heater'" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPTimeStamr" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#EVTIDENTTimeStamr" org.eventb.core.poStamp="23"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTTimeStams" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poIdentifier name="Heater'" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPTimeStams" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#EVTIDENTTimeStams" org.eventb.core.poStamp="23"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTTimeStamt" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poIdentifier name="Heater'" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPTimeStamt" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#EVTIDENTTimeStamt" org.eventb.core.poStamp="23"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPTimeStamu" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Heater=High" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPTimeStamv" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Heater=Low" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPTimeStamw" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Heater=Off" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#6|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Assignment1B/Machine0.bpo|org.eventb.core.poFile#Machine0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="23">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Heater∈HeaterSet" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TimeStamp∈ℕ" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#3"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

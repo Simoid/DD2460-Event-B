@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="Flag ≔ Sens" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context1"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="Flag"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv1_1" org.eventb.core.predicate="Flag ∈ FlagSet"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="Pressure"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Shutdown">
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="Flag = Cont"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Flag ≔ Sens" org.eventb.core.label="act2"/>
+<org.eventb.core.refinesEvent name="+" org.eventb.core.target="Shutdown"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="." org.eventb.core.identifier="Heater"/>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetToLow">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Cont"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Flag ≔ Sens" org.eventb.core.label="act2"/>
+<org.eventb.core.refinesEvent name="+" org.eventb.core.target="SetToLow"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetToHigh">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Cont"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Flag ≔ Sens" org.eventb.core.label="act2"/>
+<org.eventb.core.refinesEvent name="+" org.eventb.core.target="SetToHigh"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="TimeStamp"/>
+<org.eventb.core.refinesMachine name="4" org.eventb.core.target="Machine0"/>
+<org.eventb.core.invariant name="7" org.eventb.core.label="inv1_2" org.eventb.core.predicate="Pressure &lt; 65"/>
+<org.eventb.core.invariant name="9" org.eventb.core.label="inv1_3" org.eventb.core.predicate="(Flag = Sens ∧ Pressure ≥ 61) ⇒ Heater = Off"/>
+<org.eventb.core.invariant name=":" org.eventb.core.label="inv1_4" org.eventb.core.predicate="(Flag = Sens ∧ Pressure ≥ 56 ∧ Pressure ≤ 60) ⇒ Heater = Low"/>
+<org.eventb.core.invariant name=";" org.eventb.core.label="inv1_5" org.eventb.core.predicate="(Flag = Sens ∧ Pressure ≥ 50 ∧ Pressure ≤ 55) ⇒ Heater = High"/>
+<org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PressureSensHigh">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Sens"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="Heater = High"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Pressure :∈ {Pressure, Pressure + 1, Pressure + 2, Pressure + 3}" org.eventb.core.label="act2"/>
+<org.eventb.core.refinesEvent name="," org.eventb.core.target="PressureSens"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PressureSensOff">
+<org.eventb.core.action name="'" org.eventb.core.assignment="Pressure :∈ {Pressure − 1, Pressure − 2}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Sens"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.label="act3"/>
+<org.eventb.core.refinesEvent name=")" org.eventb.core.target="PressureSens"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="Heater = Off"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PressureSensLow">
+<org.eventb.core.action name="'" org.eventb.core.assignment="Pressure :∈ {Pressure, Pressure − 1, Pressure − 2}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal1" org.eventb.core.assignment="TimeStamp :∈ ℕ" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Sens"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.label="act3"/>
+<org.eventb.core.refinesEvent name=")" org.eventb.core.target="PressureSens"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="Heater = Low"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
