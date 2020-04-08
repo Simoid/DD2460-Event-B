@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="34">
+<org.eventb.core.poFile org.eventb.core.poStamp="36">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="14">
 <org.eventb.core.poIdentifier name="HeaterSet" org.eventb.core.type="ℙ(HeaterSet)"/>
 <org.eventb.core.poIdentifier name="High" org.eventb.core.type="HeaterSet"/>
