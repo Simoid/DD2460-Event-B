@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="4">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poFile org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="13">
 <org.eventb.core.poIdentifier name="HeaterSet" org.eventb.core.type="ℙ(HeaterSet)"/>
 <org.eventb.core.poIdentifier name="High" org.eventb.core.type="HeaterSet"/>
 <org.eventb.core.poIdentifier name="Low" org.eventb.core.type="HeaterSet"/>
@@ -9,21 +9,15 @@
 <org.eventb.core.poIdentifier name="FlagSet" org.eventb.core.type="ℙ(FlagSet)"/>
 <org.eventb.core.poIdentifier name="Cont" org.eventb.core.type="FlagSet"/>
 <org.eventb.core.poIdentifier name="Sens" org.eventb.core.type="FlagSet"/>
-<org.eventb.core.poIdentifier name="TMAX" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poPredicate name="HeaterSev" org.eventb.core.predicate="partition(FlagSet,{Sens},{Cont})" org.eventb.core.source="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#*"/>
-<org.eventb.core.poPredicate name="HeaterSew" org.eventb.core.predicate="TMAX=10" org.eventb.core.source="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#-"/>
 <org.eventb.core.poIdentifier name="AllAddresses" org.eventb.core.type="ℙ(ℤ)"/>
 <org.eventb.core.poIdentifier name="LegitimateAddresses" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="TMAX" org.eventb.core.type="ℤ"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="axm1/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="3">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Context2.bpo|org.eventb.core.poFile#Context2|org.eventb.core.poPredicateSet#ABSHYP"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="LegitimateAddresses=0 ‥ 2" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#)"/>
-<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#)"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Assignment1B/Context2.bpo|org.eventb.core.poFile#Context2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Context2.bpo|org.eventb.core.poFile#Context2|org.eventb.core.poPredicateSet#ABSHYP"/>
-</org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Assignment1B/Context2.bpo|org.eventb.core.poFile#Context2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="4">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="LegitimateAddresses=0 ‥ 2" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Assignment1B/Context2.bpo|org.eventb.core.poFile#Context2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="LegitimateAddresses={0,1,2}" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="AllAddresses=ℕ" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#+"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="LegitimateAddresses⊂AllAddresses" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="TMAX=10" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#."/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="Shutdown/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="Shutdown/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="SetToLow/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="SetToLow/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="SetToHigh/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="SetToHigh/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PressureSens/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PressureSens/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PressureSens/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PressureSens/act5/FIS" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PressureSens/act3/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="SafeShutDown/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2_1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="48" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2_3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="48" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2_4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="48" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="Shutdown/inv2_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="SetToLow/inv2_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="SetToHigh/inv2_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PressureSens/inv2_3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PressureSens/inv2_4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PressureSens/act3/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="SafeShutDown/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
