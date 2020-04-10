@@ -17,18 +17,18 @@
 </org.eventb.core.event>
 <org.eventb.core.seesContext name="(" org.eventb.core.target="Context3"/>
 <org.eventb.core.refinesMachine name=")" org.eventb.core.target="Machine2"/>
-<org.eventb.core.variable name="*" org.eventb.core.comment="Set of all users in this machine" org.eventb.core.identifier="users"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="users"/>
 <org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="users ⊆ USERS"/>
-<org.eventb.core.variable name="," org.eventb.core.comment="Current pressure of the boiler" org.eventb.core.identifier="Pressure"/>
-<org.eventb.core.variable name="-" org.eventb.core.comment="Current state (off,low,high) of the heater" org.eventb.core.identifier="Heater"/>
-<org.eventb.core.variable name="." org.eventb.core.comment="The flag that switches between the sensor and the controller (the infinite loop)" org.eventb.core.identifier="Flag"/>
-<org.eventb.core.variable name="/" org.eventb.core.comment="The timestamp that is set by the sensor and sent to the controller" org.eventb.core.identifier="TimeStamp"/>
-<org.eventb.core.variable name="0" org.eventb.core.comment="The delta of the pressure " org.eventb.core.identifier="Delta"/>
-<org.eventb.core.variable name="1" org.eventb.core.comment="Random time between 1 and TMAX" org.eventb.core.identifier="DeltaTime"/>
-<org.eventb.core.variable name="2" org.eventb.core.comment="The clock on the sensor" org.eventb.core.identifier="SensorClock"/>
-<org.eventb.core.variable name="3" org.eventb.core.comment="The clock on the controller" org.eventb.core.identifier="ControllerClock"/>
-<org.eventb.core.variable name="4" org.eventb.core.comment="The address that the sensor has to send packets to the controller" org.eventb.core.identifier="SensorAddress"/>
-<org.eventb.core.variable name="5" org.eventb.core.comment="The next state the heater will switch to" org.eventb.core.identifier="NextHeater"/>
+<org.eventb.core.variable name="," org.eventb.core.identifier="Pressure"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="Heater"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="Flag"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="TimeStamp"/>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="Delta"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="DeltaTime"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="SensorClock"/>
+<org.eventb.core.variable name="3" org.eventb.core.identifier="ControllerClock"/>
+<org.eventb.core.variable name="4" org.eventb.core.identifier="SensorAddress"/>
+<org.eventb.core.variable name="5" org.eventb.core.identifier="NextHeater"/>
 <org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="NewUser">
 <org.eventb.core.parameter name="'" org.eventb.core.identifier="us"/>
 <org.eventb.core.parameter name="(" org.eventb.core.identifier="ro"/>
@@ -37,9 +37,9 @@
 <org.eventb.core.action name="+" org.eventb.core.assignment="users ≔ users ∪ {us}" org.eventb.core.comment="Add the new user to users. REQ 15" org.eventb.core.label="act2"/>
 <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="ro ∈ ROLES"/>
 </org.eventb.core.event>
-<org.eventb.core.variable name="7" org.eventb.core.comment="Rolebased premission system" org.eventb.core.identifier="roles"/>
+<org.eventb.core.variable name="7" org.eventb.core.identifier="roles"/>
 <org.eventb.core.invariant name="8" org.eventb.core.label="inv2" org.eventb.core.predicate="roles ∈ users → ROLES"/>
-<org.eventb.core.variable name="9" org.eventb.core.comment="Current mode of the system (AUTOMATIC, SUPERVISED, MONITORED)" org.eventb.core.identifier="CurrentMode"/>
+<org.eventb.core.variable name="9" org.eventb.core.identifier="CurrentMode"/>
 <org.eventb.core.invariant name=":" org.eventb.core.label="inv3" org.eventb.core.predicate="CurrentMode ∈ MODES"/>
 <org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ChangeModeSupervised">
 <org.eventb.core.parameter name="'" org.eventb.core.identifier="us"/>
