@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="177">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="141">
+<org.eventb.core.poIdentifier name="HeaterSet" org.eventb.core.type="ℙ(HeaterSet)"/>
+<org.eventb.core.poIdentifier name="High" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Low" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Off" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poPredicate name="HeaterSeu" org.eventb.core.predicate="partition(HeaterSet,{High},{Low},{Off})" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poIdentifier name="FlagSet" org.eventb.core.type="ℙ(FlagSet)"/>
+<org.eventb.core.poIdentifier name="Cont" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="Sens" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poPredicate name="HeaterSev" org.eventb.core.predicate="partition(FlagSet,{Sens},{Cont})" org.eventb.core.source="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="158">
+<org.eventb.core.poIdentifier name="Delta" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Flag" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="Heater" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="NextHeater" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Pressure" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimeStamp" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="NextHeates" org.eventb.core.predicate="Pressure∈ℕ" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#,"/>
+<org.eventb.core.poPredicate name="NextHeatet" org.eventb.core.predicate="Heater∈HeaterSet" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="NextHeateu" org.eventb.core.predicate="TimeStamp∈ℕ" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#3"/>
+<org.eventb.core.poPredicate name="NextHeatev" org.eventb.core.predicate="NextHeater∈HeaterSet" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#7"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1_2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="172">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeates"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Cont=Sens∧55≥61⇒High=Off" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#INITIALISATION\/inv1_2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1_3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeates"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Cont=Sens∧55∈{56,57,58,59,60}∧High≠Off⇒High=Low" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#INITIALISATION\/inv1_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeates"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Cont=Sens∧55∈{50,51,52,53,54,55}∧High≠Off⇒High=High" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#INITIALISATION\/inv1_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="166">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeates"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈{−2,−1,0,1,2,3}" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTNextHeates" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Delta'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Flag'" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="TimeStamp'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="NextHeater'" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Pressure'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Heater'" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPNextHeates" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTNextHeates" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="PressureSens/inv1_2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeatet"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Cont=Sens∧Pressure+Delta≥61⇒Heater=Off" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#PressureSens\/inv1_2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="PressureSens/inv1_3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeatet"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Cont=Sens∧Pressure+Delta∈{56,57,58,59,60}∧Heater≠Off⇒Heater=Low" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#PressureSens\/inv1_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="PressureSens/inv1_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeatet"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Cont=Sens∧Pressure+Delta∈{50,51,52,53,54,55}∧Heater≠Off⇒Heater=High" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#PressureSens\/inv1_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="PressureSens/act1/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeatet"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Pressure+Delta∈ℕ" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#="/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#PressureSens\/act1\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTNextHeatet" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="173">
+<org.eventb.core.poIdentifier name="Flag'" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="TimeStamp'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Pressure'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPNextHeatet" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTNextHeatet" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Flag=Sens" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Heater=High⇒Delta∈{0,1,2,3}" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Heater=Low⇒Delta∈{−2,−1,0}" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#internal2"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Heater=Off⇒Delta∈{−1,−2}" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#internal3"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Pressure+Delta∈ℕ" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#internal7"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="SetHeater/inv1_2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeateu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Sens=Sens∧Pressure≥61⇒NextHeater=Off" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#SetHeater\/inv1_2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SetHeater/inv1_3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeateu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Sens=Sens∧Pressure∈{56,57,58,59,60}∧NextHeater≠Off⇒NextHeater=Low" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#SetHeater\/inv1_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SetHeater/inv1_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeateu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Sens=Sens∧Pressure∈{50,51,52,53,54,55}∧NextHeater≠Off⇒NextHeater=High" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#SetHeater\/inv1_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTNextHeateu" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="173">
+<org.eventb.core.poIdentifier name="Flag'" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="Heater'" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPNextHeateu" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTNextHeateu" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Pressure∈ℕ" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Pressure≥61⇒NextHeater=Off" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Pressure∈{56,57,58,59,60}⇒NextHeater=Low" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Pressure∈{50,51,52,53,54,55}⇒NextHeater=High" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#5|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Flag=Cont" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#@|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="SafeShutDown/inv1_2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="177">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeatev"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Sens=Sens∧Pressure≥61⇒Off=Off" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#B"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#SafeShutDown\/inv1_2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SafeShutDown/inv1_3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="177">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeatev"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Sens=Sens∧Pressure∈{56,57,58,59,60}∧Off≠Off⇒Off=Low" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#B"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#SafeShutDown\/inv1_3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="SafeShutDown/inv1_4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="177">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTALLHYPNextHeatev"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Sens=Sens∧Pressure∈{50,51,52,53,54,55}∧Off≠Off⇒Off=High" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#B"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poSequent#SafeShutDown\/inv1_4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTNextHeatev" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="176">
+<org.eventb.core.poIdentifier name="Flag'" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="Heater'" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPNextHeatev" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#EVTIDENTNextHeatev" org.eventb.core.poStamp="176">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Flag=Cont" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#B|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Assignment1B/Machine1.bpo|org.eventb.core.poFile#Machine1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="173">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Flag∈FlagSet" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Flag=Sens∧Pressure≥61⇒Heater=Off" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Flag=Sens∧Pressure∈{56,57,58,59,60}∧Heater≠Off⇒Heater=Low" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Flag=Sens∧Pressure∈{50,51,52,53,54,55}∧Heater≠Off⇒Heater=High" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Delta∈{−2,−1,0,1,2,3}" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#?"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

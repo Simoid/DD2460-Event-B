@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<index_root>
+<pim project="/Assignment1B">
+<rodin_index>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#0" name="SetToLow">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#0" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.carrierSet#+" name="HeaterSet">
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="10"/>
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.carrierSet#+" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="18" loc_char_start="9"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#)" name="Flag">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#-|org.eventb.core.action#*" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#0|org.eventb.core.action#*" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#)" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#-|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#0|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#1|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="1"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#1|org.eventb.core.action#*" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="4" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="1"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="1"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="4" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#0" name="SetToLow">
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#0" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#0|org.eventb.core.refinesEvent#+" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#-" name="Shutdown">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#-" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#2" name="TimeStamp">
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#3" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="9" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#2" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'|org.eventb.core.action#*" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="9" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="9" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#2" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1" name="Machine1">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#1" name="SetToHigh">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#1" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.constant#)" name="Cont">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.action#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.action#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.action#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#1|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#0|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="32" loc_char_start="28"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#-|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.constant#)" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#." name="Off">
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#." kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="44" loc_char_start="41"/>
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="40" loc_char_start="37"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="9"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#-|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="12" loc_char_start="9"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#+" name="Pressure">
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#0|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#0|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="24" loc_char_start="16"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#1|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="24" loc_char_start="16"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#-|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#1|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#+" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#+" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2" name="PressureSensOff">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=" name="PressureSensHigh">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1" name="Context1">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.seesContext#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#." name="Heater">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#." kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="54" loc_char_start="48"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="54" loc_char_start="48"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="38" loc_char_start="32"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#1" name="SetToHigh">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#1|org.eventb.core.refinesEvent#+" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#1" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#2" name="TimeStamp">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.action#internal2" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="9" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.action#internal1" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="9" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#2" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.carrierSet#'" name="FlagSet">
+<occurrence element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="17" loc_char_start="10"/>
+<occurrence element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.carrierSet#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="7"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#-" name="Low">
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#-" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="9"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#0|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="12" loc_char_start="9"/>
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="33" loc_char_start="30"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="60" loc_char_start="57"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#." name="Heater">
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#-|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="6" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#." kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="6" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#." kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#0|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="6" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#1|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="6" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#+" name="Pressure">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="21" loc_char_start="13"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="31" loc_char_start="23"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="21" loc_char_start="13"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="35" loc_char_start="27"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="45" loc_char_start="37"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#+" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="23" loc_char_start="15"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#7" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.action#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="31" loc_char_start="23"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.action#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="45" loc_char_start="37"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.action#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="59" loc_char_start="51"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.action#+" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.action#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="21" loc_char_start="13"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="23" loc_char_start="15"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="39" loc_char_start="31"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="23" loc_char_start="15"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="39" loc_char_start="31"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0" name="Context0">
+<occurrence element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.extendsContext#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.seesContext#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4" name="PressureSens">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.refinesEvent#," kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.refinesEvent#)" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.refinesEvent#)" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1" name="PressureSensLow">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.constant#(" name="Sens">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="8"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="8"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#-|org.eventb.core.action#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="24" loc_char_start="20"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="8"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.constant#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#1|org.eventb.core.action#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="11" loc_char_start="7"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#0|org.eventb.core.action#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="11" loc_char_start="7"/>
+</descriptor>
+<descriptor element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#," name="High">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="13" loc_char_start="9"/>
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#," kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="13" loc_char_start="9"/>
+<occurrence element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="26" loc_char_start="22"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#1|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="13" loc_char_start="9"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="61" loc_char_start="57"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#-" name="Shutdown">
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#-|org.eventb.core.refinesEvent#+" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#-" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0" name="Machine0">
+<occurrence element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0" kind="org.eventb.core.declaration"/>
+<occurrence element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.refinesMachine#4" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+</rodin_index>
+<export_table>
+<export file="/Assignment1B/Machine0.bum">
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#," name="High"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#-" name="Low"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#+" name="Pressure"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0" name="Context0"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#0" name="SetToLow"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#." name="Heater"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#." name="Off"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#1" name="SetToHigh"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.variable#2" name="TimeStamp"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.carrierSet#+" name="HeaterSet"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#-" name="Shutdown"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0" name="Machine0"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.event#4" name="PressureSens"/>
+</export>
+<export file="/Assignment1B/Machine1.bum">
+<exported element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.constant#)" name="Cont"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#-" name="Low"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#," name="High"/>
+<exported element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1" name="Context1"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt1" name="PressureSensLow"/>
+<exported element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.carrierSet#'" name="FlagSet"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#0" name="SetToLow"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0" name="Context0"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#1" name="SetToHigh"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#=" name="PressureSensHigh"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#." name="Heater"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#." name="Off"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#-" name="Shutdown"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1" name="Machine1"/>
+<exported element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.constant#(" name="Sens"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#+" name="Pressure"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#)" name="Flag"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.variable#2" name="TimeStamp"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.carrierSet#+" name="HeaterSet"/>
+<exported element="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0" name="Machine0"/>
+<exported element="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.event#evt2" name="PressureSensOff"/>
+</export>
+<export file="/Assignment1B/Context0.buc">
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#," name="High"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#-" name="Low"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0" name="Context0"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.carrierSet#+" name="HeaterSet"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#." name="Off"/>
+</export>
+<export file="/Assignment1B/Context1.buc">
+<exported element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.constant#)" name="Cont"/>
+<exported element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1" name="Context1"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#," name="High"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#-" name="Low"/>
+<exported element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.carrierSet#'" name="FlagSet"/>
+<exported element="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.constant#(" name="Sens"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0" name="Context0"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.carrierSet#+" name="HeaterSet"/>
+<exported element="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.constant#." name="Off"/>
+</export>
+</export_table>
+<graph is_sorted="true">
+<node label="/Assignment1B/Context0.buc" mark="false" order_pos="0"/>
+<node label="/Assignment1B/Context1.buc" mark="false" order_pos="1">
+<predecessor label="/Assignment1B/Context0.buc"/>
+</node>
+<node label="/Assignment1B/Machine0.bum" mark="false" order_pos="2">
+<predecessor label="/Assignment1B/Context0.buc"/>
+</node>
+<node label="/Assignment1B/Machine1.bum" mark="false" order_pos="3">
+<predecessor label="/Assignment1B/Machine0.bum"/>
+<predecessor label="/Assignment1B/Context1.buc"/>
+</node>
+</graph>
+<unprocessed file="/Assignment1B/Context0.bcc"/>
+<unprocessed file="/Assignment1B/Context0.bpo"/>
+<unprocessed file="/Assignment1B/Context0.bpr"/>
+<unprocessed file="/Assignment1B/Context0.bps"/>
+<unprocessed file="/Assignment1B/Context1.bcc"/>
+<unprocessed file="/Assignment1B/Context1.bpo"/>
+<unprocessed file="/Assignment1B/Context1.bpr"/>
+<unprocessed file="/Assignment1B/Context1.bps"/>
+<unprocessed file="/Assignment1B/Machine0.bcm"/>
+<unprocessed file="/Assignment1B/Machine0.bpo"/>
+<unprocessed file="/Assignment1B/Machine0.bpr"/>
+<unprocessed file="/Assignment1B/Machine0.bps"/>
+<unprocessed file="/Assignment1B/Machine1.bcm"/>
+<unprocessed file="/Assignment1B/Machine1.bpo"/>
+<unprocessed file="/Assignment1B/Machine1.bpr"/>
+<unprocessed file="/Assignment1B/Machine1.bps"/>
+<unprocessed file="/Assignment1B/Machine1.bcm_tmp"/>
+<unprocessed file="/Assignment1B/Machine1.bpo_tmp"/>
+</pim>
+<delta_list/>
+<indexer_registry>
+<registry_entry element_type="org.eventb.core.machineFile">
+<indexer id="machineIndexer"/>
+</registry_entry>
+<registry_entry element_type="org.eventb.core.contextFile">
+<indexer id="contextIndexer"/>
+</registry_entry>
+</indexer_registry>
+</index_root>

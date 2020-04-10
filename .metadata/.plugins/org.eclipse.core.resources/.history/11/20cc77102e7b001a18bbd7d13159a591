@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="(" org.eventb.core.assignment="Pressure ≔ 55" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Heater ≔ High" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="TimeStamp ≔ 0" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Delta ≔ 0" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="'" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="NextHeater ≔ High" org.eventb.core.label="act6"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context1"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="Flag"/>
+<org.eventb.core.invariant name="*" org.eventb.core.comment="Controls if system is in sensor or control mode" org.eventb.core.label="inv1_1" org.eventb.core.predicate="Flag ∈ FlagSet" org.eventb.core.theorem="true"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="Pressure"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="Heater"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="TimeStamp"/>
+<org.eventb.core.refinesMachine name="4" org.eventb.core.target="Machine0"/>
+<org.eventb.core.invariant name="9" org.eventb.core.comment="REQ 1 with support for modes" org.eventb.core.label="inv1_2" org.eventb.core.predicate="(Flag = Sens ∧ Pressure ≥ 61) ⇒ (Heater = Off)"/>
+<org.eventb.core.invariant name=":" org.eventb.core.comment="REQ 3 with support for modes" org.eventb.core.label="inv1_3" org.eventb.core.predicate="(Flag = Sens ∧ Pressure ∈ {56, 57, 58, 59, 60} ∧ Heater ≠ Off) ⇒ (Heater = Low)"/>
+<org.eventb.core.invariant name=";" org.eventb.core.comment="REQ 2 with support for modes" org.eventb.core.label="inv1_4" org.eventb.core.predicate="(Flag = Sens ∧ Pressure ∈ {50, 51, 52, 53, 54, 55} ∧ Heater ≠ Off) ⇒ (Heater = High)"/>
+<org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PressureSens">
+<org.eventb.core.guard name="'" org.eventb.core.comment="Flag should be in sensor mode" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Sens"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.comment="System should be set to control mode" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="*" org.eventb.core.comment="If the heather is high the pressure should increse with 0, 1, 2 or 3 bar" org.eventb.core.label="grd2" org.eventb.core.predicate="(Heater = High) ⇒ (Delta ∈ {0, 1, 2, 3}) "/>
+<org.eventb.core.refinesEvent name="," org.eventb.core.target="PressureSens"/>
+<org.eventb.core.guard name="internal2" org.eventb.core.comment="If the heather is Low the pressure should decrease with 0, 1 or 2 bar" org.eventb.core.label="grd3" org.eventb.core.predicate="(Heater = Low) ⇒ (Delta ∈ {−2, −1, 0})  "/>
+<org.eventb.core.guard name="internal3" org.eventb.core.comment="If the heather is Off the pressure should decrease with 1 or 2 bar" org.eventb.core.label="grd4" org.eventb.core.predicate="(Heater = Off) ⇒ (Delta ∈ {−1, −2})"/>
+<org.eventb.core.action name="internal4" org.eventb.core.assignment="Pressure ≔ Pressure + Delta" org.eventb.core.comment="New sensor reading" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="internal6" org.eventb.core.assignment="TimeStamp :∈ ℕ" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="internal7" org.eventb.core.comment="Used to solve prover issue" org.eventb.core.label="grd5" org.eventb.core.predicate="Pressure + Delta ∈ ℕ"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="&gt;" org.eventb.core.identifier="Delta"/>
+<org.eventb.core.invariant name="?" org.eventb.core.comment="Used to change the pressure in a deterministic manner" org.eventb.core.label="inv1" org.eventb.core.predicate="Delta ∈ {−2, −1, 0, 1, 2, 3}"/>
+<org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeater">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeater"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="System should be in control mode" org.eventb.core.label="grd5" org.eventb.core.predicate="Flag = Cont"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Flag ≔ Sens" org.eventb.core.comment="System should be set to sensor mode" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="A" org.eventb.core.identifier="NextHeater"/>
+<org.eventb.core.event name="B" org.eventb.core.comment="Needed in Machine 2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SafeShutDown">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Cont"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Flag ≔ Sens" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Heater ≔ Off" org.eventb.core.label="act2"/>
+<org.eventb.core.refinesEvent name="*" org.eventb.core.target="SafeShutDown"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

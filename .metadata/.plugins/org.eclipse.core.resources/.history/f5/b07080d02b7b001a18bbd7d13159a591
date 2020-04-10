@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="internal1" org.eventb.core.assignment="Pressure ≔ 55" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal2" org.eventb.core.assignment="Heater ≔ High" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="internal3" org.eventb.core.assignment="TimeStamp ≔ 0" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Delta ≔ 0" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="internal4" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="NextHeater ≔ High" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SensorAddress ≔ 0" org.eventb.core.label="act9"/>
+<org.eventb.core.action name="internal5" org.eventb.core.assignment="DeltaTime ≔ 0" org.eventb.core.label="act10"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="SensorClock ≔ 0" org.eventb.core.label="act7"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="ControllerClock ≔ 0" org.eventb.core.label="act8"/>
+<org.eventb.core.action name="'" org.eventb.core.assignment="users ≔ ∅" org.eventb.core.label="act11"/>
+<org.eventb.core.action name="internal6" org.eventb.core.assignment="roles ≔ ∅" org.eventb.core.label="act12"/>
+<org.eventb.core.action name="internal7" org.eventb.core.assignment="CurrentMode ≔ AUTOMATED" org.eventb.core.label="act13"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context3"/>
+<org.eventb.core.refinesMachine name=")" org.eventb.core.target="Machine2"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="users"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="users ⊆ USERS"/>
+<org.eventb.core.variable name="," org.eventb.core.identifier="Pressure"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="Heater"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="Flag"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="TimeStamp"/>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="Delta"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="DeltaTime"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="SensorClock"/>
+<org.eventb.core.variable name="3" org.eventb.core.identifier="ControllerClock"/>
+<org.eventb.core.variable name="4" org.eventb.core.identifier="SensorAddress"/>
+<org.eventb.core.variable name="5" org.eventb.core.identifier="NextHeater"/>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="NewUser">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="us"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="ro"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="us ∈ USERS ∖ users"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="users ≔ users ∪ {us}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="roles(us) ≔ ro" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="ro ∈ ROLES"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="roles(us) = null"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="7" org.eventb.core.identifier="roles"/>
+<org.eventb.core.invariant name="8" org.eventb.core.label="inv2" org.eventb.core.predicate="roles ∈ users → ROLES"/>
+<org.eventb.core.variable name="9" org.eventb.core.identifier="CurrentMode"/>
+<org.eventb.core.invariant name=":" org.eventb.core.label="inv3" org.eventb.core.predicate="CurrentMode ∈ MODES"/>
+<org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ChangeModeSupervised">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="us"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="us ∈ users"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="roles(us) = SUPERVISOR"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="CurrentMode ≔ SUPERVISED" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="CurrentMode = AUTOMATED"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ChangeModeMonitored">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="us"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="us ∈ users"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="roles(us) ∈ {SUPERVISOR,OPERATOR}"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="CurrentMode = AUTOMATED"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="CurrentMode ≔ MONITORED" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ChangeModeAutomated">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="us"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="us ∈ users"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="¬(¬(roles(us) = SUPERVISOR ∧ CurrentMode = SUPERVISED) ∧ ¬((roles(us) ∈ {OPERATOR,SUPERVISOR}) ∧ CurrentMode = MONITORED))"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="CurrentMode ≔ AUTOMATED" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SetHeaterAutomated">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeater"/>
+<org.eventb.core.guard name="internal7" org.eventb.core.label="grd10" org.eventb.core.predicate="(CurrentMode = AUTOMATED)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="SafeShutDown">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SafeShutDown"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="PressureSens">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PressureSens"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

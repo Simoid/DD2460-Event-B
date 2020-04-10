@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="48">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="35">
+<org.eventb.core.poIdentifier name="HeaterSet" org.eventb.core.type="ℙ(HeaterSet)"/>
+<org.eventb.core.poIdentifier name="High" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Low" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Off" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poPredicate name="HeaterSeu" org.eventb.core.predicate="partition(HeaterSet,{High},{Low},{Off})" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poIdentifier name="FlagSet" org.eventb.core.type="ℙ(FlagSet)"/>
+<org.eventb.core.poIdentifier name="Cont" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="Sens" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poPredicate name="HeaterSev" org.eventb.core.predicate="partition(FlagSet,{Sens},{Cont})" org.eventb.core.source="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#*"/>
+<org.eventb.core.poIdentifier name="AllAddresses" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="LegitimateAddresses" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="TMAX" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="LegitimateAddresset" org.eventb.core.predicate="AllAddresses=ℕ" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#+"/>
+<org.eventb.core.poPredicate name="LegitimateAddresseu" org.eventb.core.predicate="LegitimateAddresses={0,1,2}" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="LegitimateAddressev" org.eventb.core.predicate="LegitimateAddresses⊂AllAddresses" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="LegitimateAddressew" org.eventb.core.predicate="TMAX=10" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#."/>
+<org.eventb.core.poIdentifier name="MODES" org.eventb.core.type="ℙ(MODES)"/>
+<org.eventb.core.poIdentifier name="ROLES" org.eventb.core.type="ℙ(ROLES)"/>
+<org.eventb.core.poIdentifier name="USERS" org.eventb.core.type="ℙ(USERS)"/>
+<org.eventb.core.poIdentifier name="AUTOMATED" org.eventb.core.type="MODES"/>
+<org.eventb.core.poIdentifier name="MONITORED" org.eventb.core.type="MODES"/>
+<org.eventb.core.poIdentifier name="OPERATOR" org.eventb.core.type="ROLES"/>
+<org.eventb.core.poIdentifier name="SUPERVISED" org.eventb.core.type="MODES"/>
+<org.eventb.core.poIdentifier name="SUPERVISOR" org.eventb.core.type="ROLES"/>
+<org.eventb.core.poPredicate name="LegitimateAddressex" org.eventb.core.predicate="finite(USERS)" org.eventb.core.source="/Assignment1B/Context3.buc|org.eventb.core.contextFile#Context3|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="LegitimateAddressey" org.eventb.core.predicate="USERS≠(∅ ⦂ ℙ(USERS))" org.eventb.core.source="/Assignment1B/Context3.buc|org.eventb.core.contextFile#Context3|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="LegitimateAddressez" org.eventb.core.predicate="partition(ROLES,{SUPERVISOR},{OPERATOR})" org.eventb.core.source="/Assignment1B/Context3.buc|org.eventb.core.contextFile#Context3|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="LegitimateAddresse{" org.eventb.core.predicate="partition(MODES,{AUTOMATED},{MONITORED},{SUPERVISED})" org.eventb.core.source="/Assignment1B/Context3.buc|org.eventb.core.contextFile#Context3|org.eventb.core.axiom#3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="ControllerClock" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="CurrentMode" org.eventb.core.type="MODES"/>
+<org.eventb.core.poIdentifier name="Delta" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="DeltaTime" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Flag" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="Heater" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="NextHeater" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Pressure" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="SensorAddress" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="SensorClock" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="TimeStamp" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="roles" org.eventb.core.type="ℙ(USERS×ROLES)"/>
+<org.eventb.core.poIdentifier name="users" org.eventb.core.type="ℙ(USERS)"/>
+<org.eventb.core.poPredicate name="ControllerClocl" org.eventb.core.predicate="Pressure∈ℕ" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#,"/>
+<org.eventb.core.poPredicate name="ControllerClocm" org.eventb.core.predicate="Heater∈HeaterSet" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="ControllerClocn" org.eventb.core.predicate="TimeStamp∈ℕ" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#3"/>
+<org.eventb.core.poPredicate name="ControllerCloco" org.eventb.core.predicate="NextHeater∈HeaterSet" org.eventb.core.source="/Assignment1B/Machine0.bum|org.eventb.core.machineFile#Machine0|org.eventb.core.invariant#7"/>
+<org.eventb.core.poPredicate name="ControllerClocp" org.eventb.core.predicate="Flag∈FlagSet" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#*"/>
+<org.eventb.core.poPredicate name="ControllerClocq" org.eventb.core.predicate="Flag=Sens∧Pressure≥61⇒Heater=Off" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#9"/>
+<org.eventb.core.poPredicate name="ControllerClocr" org.eventb.core.predicate="Flag=Sens∧Pressure∈{56,57,58,59,60}∧Heater≠Off⇒Heater=Low" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#:"/>
+<org.eventb.core.poPredicate name="ControllerClocs" org.eventb.core.predicate="Flag=Sens∧Pressure∈{50,51,52,53,54,55}∧Heater≠Off⇒Heater=High" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#;"/>
+<org.eventb.core.poPredicate name="ControllerCloct" org.eventb.core.predicate="Delta∈{−2,−1,0,1,2,3}" org.eventb.core.source="/Assignment1B/Machine1.bum|org.eventb.core.machineFile#Machine1|org.eventb.core.invariant#?"/>
+<org.eventb.core.poPredicate name="ControllerClocu" org.eventb.core.predicate="DeltaTime∈ℕ" org.eventb.core.source="/Assignment1B/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.invariant#G"/>
+<org.eventb.core.poPredicate name="ControllerClocv" org.eventb.core.predicate="ControllerClock∈ℕ" org.eventb.core.source="/Assignment1B/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.invariant#I"/>
+<org.eventb.core.poPredicate name="ControllerClocw" org.eventb.core.predicate="SensorClock∈ℕ" org.eventb.core.source="/Assignment1B/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.invariant#H"/>
+<org.eventb.core.poPredicate name="ControllerClocx" org.eventb.core.predicate="SensorAddress∈ℕ" org.eventb.core.source="/Assignment1B/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.invariant#M"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTALLHYPControllerClocl"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(USERS×ROLES))∈(∅ ⦂ ℙ(USERS)) → ROLES" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/Assignment1B/Machine2.bum|org.eventb.core.machineFile#Machine2|org.eventb.core.event#?"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTControllerClocl" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="Delta'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="users'" org.eventb.core.type="ℙ(USERS)"/>
+<org.eventb.core.poIdentifier name="Flag'" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="CurrentMode'" org.eventb.core.type="MODES"/>
+<org.eventb.core.poIdentifier name="TimeStamp'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="SensorAddress'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="roles'" org.eventb.core.type="ℙ(USERS×ROLES)"/>
+<org.eventb.core.poIdentifier name="ControllerClock'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="NextHeater'" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Pressure'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="DeltaTime'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="SensorClock'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Heater'" org.eventb.core.type="HeaterSet"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPControllerClocl" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTIDENTControllerClocl" org.eventb.core.poStamp="36"/>
+<org.eventb.core.poSequent name="NewUser/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTALLHYPControllerClocm"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="roles{us ↦ ro}∈users∪{us} → ROLES" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.invariant#8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poSequent#NewUser\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTControllerClocm" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poIdentifier name="ro" org.eventb.core.type="ROLES"/>
+<org.eventb.core.poIdentifier name="users'" org.eventb.core.type="ℙ(USERS)"/>
+<org.eventb.core.poIdentifier name="roles'" org.eventb.core.type="ℙ(USERS×ROLES)"/>
+<org.eventb.core.poIdentifier name="us" org.eventb.core.type="USERS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPControllerClocm" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTIDENTControllerClocm" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="us∈USERS ∖ users" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#6|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="ro∈ROLES" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#6|org.eventb.core.guard#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="ChangeModeSupervised/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="41">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerClocn'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="us∈dom(roles)∧roles∈USERS ⇸ ROLES" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#;|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#;|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerClocn'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTControllerClocn" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="41">
+<org.eventb.core.poIdentifier name="CurrentMode'" org.eventb.core.type="MODES"/>
+<org.eventb.core.poIdentifier name="us" org.eventb.core.type="USERS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPControllerClocn'" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTIDENTControllerClocn" org.eventb.core.poStamp="41">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="us∈users" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#;|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPControllerClocn" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerClocn'" org.eventb.core.poStamp="42">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="roles(us)=SUPERVISOR" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#;|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="CurrentMode=AUTOMATED" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#;|org.eventb.core.guard#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="ChangeModeMonitored/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerCloco'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="us∈dom(roles)∧roles∈USERS ⇸ ROLES∧(roles(us)=SUPERVISOR∨(us∈dom(roles)∧roles∈USERS ⇸ ROLES))" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#=|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#=|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerCloco'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTControllerCloco" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="45">
+<org.eventb.core.poIdentifier name="CurrentMode'" org.eventb.core.type="MODES"/>
+<org.eventb.core.poIdentifier name="us" org.eventb.core.type="USERS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPControllerCloco'" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTIDENTControllerCloco" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="us∈users" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#=|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPControllerCloco" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerCloco'" org.eventb.core.poStamp="45">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="roles(us)=SUPERVISOR∨roles(us)=OPERATOR" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#=|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="CurrentMode=AUTOMATED" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#=|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="ChangeModeAutomated/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="48">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerClocp'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="us∈dom(roles)∧roles∈USERS ⇸ ROLES∧((roles(us)=SUPERVISOR∧CurrentMode=SUPERVISED)∨(us∈dom(roles)∧roles∈USERS ⇸ ROLES∧(roles(us)=SUPERVISOR∨(us∈dom(roles)∧roles∈USERS ⇸ ROLES))))" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#&gt;|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#&gt;|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerClocp'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTControllerClocp" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="48">
+<org.eventb.core.poIdentifier name="CurrentMode'" org.eventb.core.type="MODES"/>
+<org.eventb.core.poIdentifier name="us" org.eventb.core.type="USERS"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPControllerClocp'" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTIDENTControllerClocp" org.eventb.core.poStamp="48">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="us∈users" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#&gt;|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPControllerClocp" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#EVTHYPControllerClocp'" org.eventb.core.poStamp="48">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="(roles(us)=SUPERVISOR∧CurrentMode=SUPERVISED)∨((roles(us)=SUPERVISOR∨roles(us)=OPERATOR)∧CurrentMode=MONITORED)" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.event#&gt;|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Assignment1B/Machine3.bpo|org.eventb.core.poFile#Machine3|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="36">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="users∈ℙ(USERS)" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.invariant#+"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="roles∈users → ROLES" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.invariant#8"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="CurrentMode∈MODES" org.eventb.core.source="/Assignment1B/Machine3.bum|org.eventb.core.machineFile#Machine3|org.eventb.core.invariant#:"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/inv2_1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="118" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv2_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="118" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv2_3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="118" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv2_4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="118" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PressureSens/inv2_3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="117" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PressureSens/inv2_4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="117" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="PressureSens/act3/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="117" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="SetHeater/inv2_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="117" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2_1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="123" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="123" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2_3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="123" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2_4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="123" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PressureSens/inv2_3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="126" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PressureSens/inv2_4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="126" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="PressureSens/act3/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="126" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="SetHeater/inv2_2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="126" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

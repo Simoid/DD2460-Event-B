@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="Machine1"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context2"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="Flag"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="Pressure"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="Heater"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="TimeStamp"/>
+<org.eventb.core.variable name="&gt;" org.eventb.core.identifier="Delta"/>
+<org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="internal1" org.eventb.core.assignment="Pressure ≔ 55" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal2" org.eventb.core.assignment="Heater ≔ High" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="internal3" org.eventb.core.assignment="TimeStamp ≔ 0" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Delta ≔ 0" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="internal4" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="NextHeater ≔ High" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SensorAddress ≔ 0" org.eventb.core.label="act9"/>
+<org.eventb.core.action name="'" org.eventb.core.assignment="DeltaTime ≔ 0" org.eventb.core.label="act10"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="SensorClock ≔ 0" org.eventb.core.label="act7"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="ControllerClock ≔ 0" org.eventb.core.label="act8"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PressureSens">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="PressureSens"/>
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Sens"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="(Heater = High) ⇒ (Delta ∈ {0, 1, 2, 3}) "/>
+<org.eventb.core.guard name="internal2" org.eventb.core.label="grd3" org.eventb.core.predicate="(Heater = Low) ⇒ (Delta ∈ {−2, −1, 0})  "/>
+<org.eventb.core.guard name="internal3" org.eventb.core.label="grd4" org.eventb.core.predicate="(Heater = Off) ⇒ (Delta ∈ {−1, −2})"/>
+<org.eventb.core.action name="internal4" org.eventb.core.assignment="Pressure ≔ Pressure + Delta" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="internal7" org.eventb.core.label="grd5" org.eventb.core.predicate="Pressure + Delta ∈ ℕ"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="Time between 1 and TMAX" org.eventb.core.label="grd6" org.eventb.core.predicate="DeltaTime ∈ 1‥TMAX"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="SensorClock ≔ SensorClock + DeltaTime" org.eventb.core.comment="Update SensorClock" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="TimeStamp ≔ SensorClock" org.eventb.core.comment="Update Timestamp" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="internal6" org.eventb.core.assignment="SensorAddress ≔ 1" org.eventb.core.comment="Valid sensorAdress" org.eventb.core.label="act6"/>
+<org.eventb.core.guard name="internal8" org.eventb.core.label="grd7" org.eventb.core.predicate="SensorClock + DeltaTime ∈ ℕ"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="D" org.eventb.core.identifier="DeltaTime"/>
+<org.eventb.core.variable name="E" org.eventb.core.identifier="SensorClock"/>
+<org.eventb.core.variable name="F" org.eventb.core.identifier="ControllerClock"/>
+<org.eventb.core.invariant name="G" org.eventb.core.comment="Used to update the SensorClock" org.eventb.core.label="inv2_1" org.eventb.core.predicate="DeltaTime ∈ ℕ"/>
+<org.eventb.core.invariant name="I" org.eventb.core.comment="Internal clock for Controller" org.eventb.core.label="inv2_2" org.eventb.core.predicate="ControllerClock ∈ ℕ  "/>
+<org.eventb.core.invariant name="H" org.eventb.core.comment="Internal Clock for sensor" org.eventb.core.label="inv2_3" org.eventb.core.predicate="SensorClock ∈ ℕ"/>
+<org.eventb.core.variable name="L" org.eventb.core.identifier="SensorAddress"/>
+<org.eventb.core.invariant name="M" org.eventb.core.comment="Possible sensor addresses" org.eventb.core.label="inv2_4" org.eventb.core.predicate="SensorAddress ∈ ℕ"/>
+<org.eventb.core.event name="N" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SetHeater">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="SetHeater"/>
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="Pressure ∈ ℕ"/>
+<org.eventb.core.guard name="internal1" org.eventb.core.label="grd2" org.eventb.core.predicate="(Pressure ≥ 61) ⇒ (NextHeater = Off)"/>
+<org.eventb.core.action name="internal1" org.eventb.core.assignment="Heater ≔ NextHeater" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="(Pressure ∈ {56, 57, 58, 59, 60}) ⇒ NextHeater = Low"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd4" org.eventb.core.predicate="(Pressure ∈ {50, 51, 52, 53, 54, 55}) ⇒ NextHeater = High"/>
+<org.eventb.core.guard name="internal2" org.eventb.core.label="grd5" org.eventb.core.predicate="Flag = Cont"/>
+<org.eventb.core.action name="internal2" org.eventb.core.assignment="Flag ≔ Sens" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="ControllerClock ≔ TimeStamp" org.eventb.core.comment="Update controller clock" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="internal4" org.eventb.core.comment="Assure adress from sensor is Legitimate" org.eventb.core.label="grd8" org.eventb.core.predicate="SensorAddress ∈ LegitimateAddresses"/>
+<org.eventb.core.guard name="internal3" org.eventb.core.comment="Should be a new Timestamp" org.eventb.core.label="grd7" org.eventb.core.predicate="TimeStamp &gt; ControllerClock"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="O" org.eventb.core.identifier="NextHeater"/>
+<org.eventb.core.event name="P" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SafeShutDown">
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="Flag = Cont"/>
+<org.eventb.core.guard name=")" org.eventb.core.comment="If a non valid timestamp or sensor adress was used -&gt; shutdown" org.eventb.core.label="grd2" org.eventb.core.predicate="(TimeStamp &lt; ControllerClock) ∨ (SensorAddress ∉ LegitimateAddresses)"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="Heater ≔ Off" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Flag ≔ Sens" org.eventb.core.label="act2"/>
+<org.eventb.core.refinesEvent name="," org.eventb.core.target="SafeShutDown"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="Q" org.eventb.core.label="inv99" org.eventb.core.predicate="(Flag = Sens ∧ Pressure ≥ 61) ⇒ (Heater = High)"/>
+</org.eventb.core.machineFile>

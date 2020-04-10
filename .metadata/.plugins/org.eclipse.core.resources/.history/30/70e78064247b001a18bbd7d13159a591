@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="internal1" org.eventb.core.assignment="Pressure ≔ 55" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="internal2" org.eventb.core.assignment="Heater ≔ High" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="internal3" org.eventb.core.assignment="TimeStamp ≔ 0" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="Delta ≔ 0" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="internal4" org.eventb.core.assignment="Flag ≔ Cont" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="NextHeater ≔ High" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SensorAddress ≔ 0" org.eventb.core.label="act9"/>
+<org.eventb.core.action name="internal5" org.eventb.core.assignment="DeltaTime ≔ 0" org.eventb.core.label="act10"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="SensorClock ≔ 0" org.eventb.core.label="act7"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="ControllerClock ≔ 0" org.eventb.core.label="act8"/>
+<org.eventb.core.action name="'" org.eventb.core.assignment="users ≔ ∅" org.eventb.core.label="act11"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context3"/>
+<org.eventb.core.refinesMachine name=")" org.eventb.core.target="Machine2"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="users"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="users ∈ ℙ(Users)"/>
+<org.eventb.core.variable name="," org.eventb.core.identifier="Pressure"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="Heater"/>
+<org.eventb.core.variable name="." org.eventb.core.identifier="Flag"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="TimeStamp"/>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="Delta"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="DeltaTime"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="SensorClock"/>
+</org.eventb.core.machineFile>

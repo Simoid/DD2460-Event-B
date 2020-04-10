@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="HeaterSet" org.eventb.core.type="ℙ(HeaterSet)"/>
+<org.eventb.core.poIdentifier name="High" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Low" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poIdentifier name="Off" org.eventb.core.type="HeaterSet"/>
+<org.eventb.core.poPredicate name="HeaterSeu" org.eventb.core.predicate="partition(HeaterSet,{High},{Low},{Off})" org.eventb.core.source="/Assignment1B/Context0.buc|org.eventb.core.contextFile#Context0|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poIdentifier name="FlagSet" org.eventb.core.type="ℙ(FlagSet)"/>
+<org.eventb.core.poIdentifier name="Cont" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="Sens" org.eventb.core.type="FlagSet"/>
+<org.eventb.core.poIdentifier name="TMAX" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="HeaterSev" org.eventb.core.predicate="partition(FlagSet,{Sens},{Cont})" org.eventb.core.source="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="HeaterSew" org.eventb.core.predicate="TMAX=10" org.eventb.core.source="/Assignment1B/Context1.buc|org.eventb.core.contextFile#Context1|org.eventb.core.axiom#-"/>
+<org.eventb.core.poIdentifier name="AllAddresses" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="LegitimateAddresses" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Assignment1B/Context2.bpo|org.eventb.core.poFile#Context2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="9">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="LegitimateAddresses={0,1,2}" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="AllAddresses=ℕ" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="LegitimateAddresses⊂AllAddresses" org.eventb.core.source="/Assignment1B/Context2.buc|org.eventb.core.contextFile#Context2|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
